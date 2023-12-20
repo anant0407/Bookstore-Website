@@ -1,0 +1,96 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection) or
+# paste cURL into the file and request will be converted to HTTP Request format.
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+GET http://localhost:8080/AnantBookstoreReactTransact/api/categories
+Accept: application/json
+
+###
+
+# curl 'http://localhost:3000/AnantBookstoreReactTransact/api/orders'
+#  -H 'Accept: application/json, text/plain, */*'
+#  -H 'Accept-Language: en-US,en;q=0.9,el-CY;q=0.8,el;q=0.7'
+#  -H 'Connection: keep-alive'
+#  -H 'Content-Type: application/json'
+#  -H 'Cookie: username-localhost-8888=2|1:0|10:1699117734|23:username-localhost-8888|204:eyJ1c2VybmFtZSI6ICI0YjNlZmYwZmJjMDg0NjgwODYxMzhkZjY3ZjNiY2FlNSIsICJuYW1lIjogIkFub255bW91cyBLYWxsaWNob3JlIiwgImRpc3BsYXlfbmFtZSI6ICJBbm9ueW1vdXMgS2FsbGljaG9yZSIsICJpbml0aWFscyI6ICJBSyIsICJjb2xvciI6IG51bGx9|0b1c17d831b56030866eb359fa8987f0ff461160325f6451c4fdf48cb34dcffb; _xsrf=2|19f44296|e8fa83ee06117cbd821beb0a5536e5a8|1699117734'
+#  -H 'Origin: http://localhost:3000'
+#  -H 'Referer: http://localhost:3000/AnantBookstoreReactTransact/checkout'
+#  -H 'Sec-Fetch-Dest: empty'
+#  -H 'Sec-Fetch-Mode: cors'
+#  -H 'Sec-Fetch-Site: same-origin'
+#  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36'
+#  -H 'sec-ch-ua: "Google Chrome";v="119", "Chromium";v="119", "Not?A_Brand";v="24"'
+#  -H 'sec-ch-ua-mobile: ?0'
+#  -H 'sec-ch-ua-platform: "Windows"'
+#  --data-raw '{"customerForm":{"name":"Sravan","address":"Lanco Hills","phone":"(555)555-1234","email":"sravan.dhira@gmail.com","ccNumber":"5260990199015260","ccExpiryMonth":1,"ccExpiryYear":2024},"cart":{"itemArray":[{"id":1019,"book":{"bookId":1019,"title":"The Housemaid","author":"Freida McFadden","price":13,"isPublic":true,"categoryId":1005,"description":"","isFeatured":false,"rating":0},"quantity":1},{"id":1018,"book":{"bookId":1018,"title":"Iron Flame (The Empyrean, 2)","author":"Rebecca Yarros","price":12,"isPublic":false,"categoryId":1005,"description":"","isFeatured":false,"rating":0},"quantity":2}]}}'
+#  --compressed
+POST http://localhost:3000/AnantBookstoreReactTransact/api/orders
+Accept: application/json, text/plain, */*
+Accept-Language: en-US,en;q=0.9,el-CY;q=0.8,el;q=0.7
+Connection: keep-alive
+Cookie: username-localhost-8888=2|1:0|10:1699117734|23:username-localhost-8888|204:eyJ1c2VybmFtZSI6ICI0YjNlZmYwZmJjMDg0NjgwODYxMzhkZjY3ZjNiY2FlNSIsICJuYW1lIjogIkFub255bW91cyBLYWxsaWNob3JlIiwgImRpc3BsYXlfbmFtZSI6ICJBbm9ueW1vdXMgS2FsbGljaG9yZSIsICJpbml0aWFscyI6ICJBSyIsICJjb2xvciI6IG51bGx9|0b1c17d831b56030866eb359fa8987f0ff461160325f6451c4fdf48cb34dcffb; _xsrf=2|19f44296|e8fa83ee06117cbd821beb0a5536e5a8|1699117734
+Origin: http://localhost:3000
+Referer: http://localhost:3000/AnantBookstoreReactTransact/checkout
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+sec-ch-ua: "Google Chrome";v="119", "Chromium";v="119", "Not?A_Brand";v="24"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Content-Type: application/json
+
+{
+  "customerForm": {
+    "name": "Sravan",
+    "address": "Lanco Hills",
+    "phone": "(555)555-1234",
+    "email": "",
+    "ccNumber": "5260990199015260",
+    "ccExpiryMonth": 1,
+    "ccExpiryYear": 2024
+  },
+  "cart": {
+    "itemArray": [
+      {
+        "id": 1019,
+        "book": {
+          "bookId": 1019,
+          "title": "The Housemaid",
+          "author": "Freida McFadden",
+          "price": 13,
+          "isPublic": true,
+          "categoryId": 1005,
+          "description": "",
+          "isFeatured": false,
+          "rating": 0
+        },
+        "quantity": 1
+      },
+      {
+        "id": 1018,
+        "book": {
+          "bookId": 1018,
+          "title": "Iron Flame (The Empyrean, 2)",
+          "author": "Rebecca Yarros",
+          "price": 12,
+          "isPublic": false,
+          "categoryId": 1005,
+          "description": "",
+          "isFeatured": false,
+          "rating": 0
+        },
+        "quantity": 2
+      }
+    ]
+  }
+}
+
+###
+
+
+###
